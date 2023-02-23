@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url('resources/Raleway,Work_Sans/Raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype'),
+    url('resources/Raleway,Work_Sans/Raleway/Raleway-VariableFont_wght.ttf') format('truetype'),
+    url('resources/Raleway,Work_Sans/Raleway/static/Raleway-Black.ttf') format('truetype'),
+    url('resources/Raleway,Work_Sans/Raleway/static/Raleway-Black.ttf') format('truetype')
+
+}
+@font-face {
+    font-family: 'Work Sans', sans-serif;
+    src: url('resources/Raleway,Work_Sans/Work_Sans/WorkSans-Italic-VariableFont_wght.ttf') format('truetype'),
+    url('resources/Raleway,Work_Sans/Work_Sans/static') format('truetype'),
+    url('resources/Raleway,Work_Sans/Work_Sans/static/WorkSans-Regular.ttf') format('truetype'),
+    url('/Users/oskargolinski/Desktop/projects/flexbox-business-site-starting/resources/Raleway,Work_Sans/Work_Sans/static/WorkSans-Light.ttf') format('truetype');
+}
+
+html {
+    font-size: 16px;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+/*<!--Header section-->*/
+
+
+.headcontent {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+header nav {
+    margin-right: 5%;
+    padding-left: 5%;
+  }
+header ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav li {
+    padding-left: 3.5rem;
+    display: block;
+
+  }
+
+header a {
+    color: #334237;
+    vertical-align: bottom;
+}
+.deskoplogo {
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+.navbar a {
+    text-decoration: underline;
+}
+.navbar a:hover {
+    text-decoration: none;
+    border: .2rem solid #334237;
+    background-color: #334237;
+    color: white;
+    letter-spacing: 0.5rem;
+}
+
+/*<!--Mission section-->*/
+
+#mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.banner {
+    background-image: url('/Users/oskargolinski/Desktop/projects/plantstore/resources/images/background3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 43.5rem;
+}
+.contentcenter{
+    background-color: #96C2A130;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;   
+}
+.missionsentence {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.4;
+    text-align: center;
+}
+.missionsentence h2{
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: .12rem;
+}
+.missionsentence h3{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.button a {
+    color: #9FCFAB;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.button a:hover {
+    border: 1px solid white;
+    background-color: #FFFFFF60;
+    color: #334237;
+    padding: 1rem;
+}
+/*<!--Services section-->*/
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+}
+#services h3, #services h4  {
+    color:#334237;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.4;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .12rem;
+    text-align: center;
+}
+#services p {
+    color:#334237;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.serviceclick {
+    display: grid;
+    grid-template-columns: repeat(2, 30%);
+    gap: 2%;
+    justify-content: center;
+}
+
+.textsservice {
+    display: grid;
+    grid-template-rows: repeat(5, 20%);
+    gap: 2%;
+}
+.textservice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9FCFAB40;
+    font-size: 2.5rem;
+}
+.images {
+    display: grid;
+    grid-template-rows: repeat(5, 20%);
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagecontainer img {
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+}
+#services a {
+    color:#334237;
+}
+#services a:hover {
+    border: .2rem solid #334237;
+    background-color: #334237;
+    color: white;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+}
+@media only screen and (max-width:600px) {
+    .images{
+        display: none;
+    }
+    .serviceclick {
+        margin: 10%;
+        display: flex;
+    }
+    #services h4 {
+        font-size: 1.5rem;
+    }
+    .textservice {
+        padding: 20%;
+    }
+
+    #services a:hover {
+        border: .1rem solid #334237;
+        background-color: #334237;
+        color: white;
+        letter-spacing: 0.1rem;
+        font-size: 1rem;
+    }
+    
+}
+
+/*<!--Stores section-->*/
+#stores h3, #stores p {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+}
+#stores h3{
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 5%;
+}
+#stores p {
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.storesbanner {
+    background-image: url('/Users/oskargolinski/Desktop/projects/plantstore/resources/images/stores.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.locations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.location {
+    background-color:  #96C2A190;
+    padding: 3rem;
+    margin: 1rem;
+    width: 30%;
+}
+
+/*<!--Contact section-->*/
+.contactfollow{
+    display: flex;
+    justify-content: center;
+}
+.contact {
+    background-color:  #96C2A190;
+    color:#334237;
+    text-align: center;
+    width: 45%;
+    padding: 2rem;
+    margin: 1rem auto;  
+}
+.contact h3, .contact p {
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 0.3rem;
+    width: auto;
+}
+.contact h3 {
+    font-size: 1.5rem;
+}
+.contact p {
+    font-size: 0.9rem;
+}
+.contact a {
+    color: #334237;
+    text-decoration:underline;
+}
+.contact a:hover {
+    border: 1px solid white;
+    padding: 1.5%;
+}
+/*<!--footer section-->*/
+
+footer {
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: right;
+    color: #334237;
+}
+footer p {
+    margin-right: 1%;
+}
