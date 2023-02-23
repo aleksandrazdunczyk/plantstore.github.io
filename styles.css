@@ -86,7 +86,7 @@ header a {
     margin: 0 auto;
 }
 .banner {
-    background-image: url('/Users/oskargolinski/Desktop/projects/plantstore/resources/images/background3.jpg');
+    background-image: url('resources/images/background3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -236,7 +236,7 @@ header a {
     text-align: center;
 }
 .storesbanner {
-    background-image: url('/Users/oskargolinski/Desktop/projects/plantstore/resources/images/stores.jpg');
+    background-image: url('resources/images/stores.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
